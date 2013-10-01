@@ -6,7 +6,7 @@ Chef is a full-fledged event framework to be used at [CampusHash](http://campush
 
 ### Registration ###
 
-Attendee registration and UEID (Unique Event ID) generation.
+Attendee registration and UEID (Unique Event ID) generation. All registrations would be synced to CampusHash central database.
 
 ### Broadcast ###
 
@@ -15,6 +15,10 @@ Speaker-level push broadcasts to all connected participants. This can be used to
 ### Intra-event Chat ###
 
 IRC-styled chat board. Participants can use it for conversations.
+
+### Notes ###
+
+Take quick notes.
 
 ### Offline Docs ###
 
@@ -32,12 +36,13 @@ At the end of the event, the participants can download all the relevant data - b
 
 ### Server ###
 
-- [Flask Microframework](http://flask.pocoo.org/) for server-side logic
-	- [Juggernaut](http://flask.pocoo.org/snippets/80/) for real-time pushes
-- [PostgreSQL](www.postgresql.org) database, primarily
+- [Django](http://djangoproject.com/) for server-side logic
+	- [Tastypie](http://tastypieapi.org) for REST API
+	- [Django-SocketIO](https://github.com/stephenmcd/django-socketio) for real-time
+- [SQLite3](www.sqlite.org) for persistence
 
 ### Client ###
 
 - [Twitter Bootstrap](http://getbootstrap.com/) for UI
 - [AngularJS](http://angularjs.org/) for front-end magic
-- [socket.io](http://socket.io/) for real-time pushes
+- [socket.io](http://socket.io/) for real-time
