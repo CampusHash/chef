@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Notes app</title>
+    </head>
+
+    <body>
+        
+        <p>add a note <a href="notes/create/">click here</a> </p>
+   
+        
+    </body>
+
+</html>
