@@ -6,10 +6,11 @@ admin.autodiscover()
 
 # Tastypie stuff
 from tastypie.api import Api
-from api.resources import ProfileResource
+from api.resources import ProfileResource, UserResource
 
 v1_api = Api(api_name='v1')
 v1_api.register(ProfileResource())
+v1_api.register(UserResource())
 
 urlpatterns = patterns('',
     # Examples:
