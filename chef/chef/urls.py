@@ -3,6 +3,7 @@ from django.conf.urls import patterns, include, url
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
 admin.autodiscover()
+from django.conf import settings
 
 # Tastypie stuff
 from tastypie.api import Api
@@ -25,4 +26,5 @@ urlpatterns = patterns('',
 
     # API URL Conf
     (r'^api/', include(v1_api.urls)),
+    (r'^$', 'ui.views.home'),
 )
