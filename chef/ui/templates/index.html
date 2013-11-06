@@ -1,20 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" ng-app="myApp">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chef - CampusHash Events Framework">
+  <meta name="author" content="Sanket <sanket@campushash.com>">
+
   <title>My AngularJS App</title>
-  <link rel="stylesheet" href="/static/css/app.css"/>
+  
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/static/css/app-theme.css">
+  <link rel="stylesheet" href="/static/css/app.css">
 </head>
+
 <body>
-  <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
-  </ul>
+  
+  <div id="wrapper">
+    
+    <!-- Sidebar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navgation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Chef</a>
+      </div>
 
-  <div ng-view></div>
-
-  <div>Angular seed app: v<span app-version></span></div>
-
+      <!-- Sidebar -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav side-nav">
+          <li class="active"><a href="#/home">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
   -->
