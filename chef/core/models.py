@@ -18,6 +18,10 @@ class Profile(models.Model):
 	organization = models.CharField(max_length=1024)
 	campushash_uid = models.CharField(max_length=1024, blank=True)
 
+	def __unicode__(self):
+		return self.user.username
+
+
 class Event(models.Model):
 	"""
 	Event definitions. An admin can create/update/delete an event.
@@ -25,3 +29,6 @@ class Event(models.Model):
 	Doing do needs an API key.
 	"""
 	name = models.CharField(max_length=1024)
+
+	def __unicode__(self):
+		return self.name
