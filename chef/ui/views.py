@@ -3,3 +3,6 @@ from django.http import HttpResponse, HttpResponseRedirect
 
 def home(request):
 	return render_to_response('index.html')
+
+def register(request):
+	return render_to_response('register.html')

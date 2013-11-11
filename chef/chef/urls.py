@@ -26,5 +26,6 @@ urlpatterns = patterns('',
 
     # API URL Conf
     (r'^api/', include(v1_api.urls)),
+    (r'^register/$', 'ui.views.register'),
     (r'^$', 'ui.views.home'),
 )
