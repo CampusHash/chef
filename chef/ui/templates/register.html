@@ -6,7 +6,7 @@
   <meta name="description" content="Chef - CampusHash Events Framework">
   <meta name="author" content="Sanket <sanket@campushash.com>">
 
-  <title>Chef</title>
+  <title>Chef &raquo; Installation</title>
   
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="/static/css/bootstrap.min.css">
@@ -17,34 +17,31 @@
 </head>
 
 <body>
-  
   <div class="container">
     <div class="row">
       <div class="col-sm-6 col-md-4 col-md-offset-4">
-        <h1 class="text-center register-title">Create a Super-Chef!</h1>
         <div class="register-box">
           <img class="logo-large" src="/static/img/chef-logo.png" alt="Chef Logo">
           <form class="register-form">
             <input type="text" class="form-control" placeholder="Username" required autofocus>
             <input type="password" class="form-control" placeholder="Password" required>
             <button class="btn btn-lg btn-primary btn-block" type="submit">
-              Register
+              Install
             </button>
-            <a href="#" class="pull-right register-help">Need help?</a><span class="clearfix"></span>
+            <a href="#" id="chef-help" class="pull-right register-help" data-toggle="popover" title="Chef Help" data-content="Create a super-user for your Chef installation here. You can create admins / mods later." data-placement="right">Need help?</a><span class="clearfix"></span>
           </form>
         </div>
+        <div class="copyright text-center">&copy; 2013 CampusHash</div>
       </div>
     </div>
   </div>
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
   -->
-  <script src="/static/lib/angular/angular.js"></script>
   <script src="/static/lib/jquery/jquery.min.js"></script>
-  <script src="/static/js/app.js"></script>
-  <script src="/static/js/services.js"></script>
-  <script src="/static/js/controllers.js"></script>
-  <script src="/static/js/filters.js"></script>
-  <script src="/static/js/directives.js"></script>
+  <script src="/static/lib/bootstrap/bootstrap.js"></script>
+  <script>
+    $("#chef-help").popover({'container' : 'body'});
+  </script>
 </body>
 </html>

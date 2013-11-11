@@ -1,5 +1,13 @@
+body {
+  background:
+    url('/static/img/shattered.png') repeat;
+}
+
 .register-title {
   display: block;
+  color: #34495E;
+  text-transform: uppercase;
+  font-size: 25px;
 }
     
 .register-box {
@@ -51,4 +59,10 @@
 
 .register-help {
   margin-top: 10px;
+}
+
+.copyright {
+  display: block;
+  margin-top: 10px;
+  color: #555;
 }
