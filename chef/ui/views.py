@@ -12,6 +12,12 @@ def home(request):
 	else:
 		return render_to_response('index.html')
 
+def chef(request):
+	"""
+	Chef admin panel.
+	"""
+	pass
+
 def register(request):
 	"""
 	Renders the Chef registration page for installation.
