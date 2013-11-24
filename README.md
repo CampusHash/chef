@@ -8,6 +8,10 @@ Chef is a full-fledged event framework to be used at [CampusHash](http://campush
 
 Attendee registration and UEID (Unique Event ID) generation. All registrations would be synced to CampusHash central database.
 
+### SlideCast ###
+
+Attendees can screen-share the presentation on the speaker's computer. The presentations would be HTML-based, so they can be embedded in an UI-view on the Chef control panel. Use [Django-SocketIO](https://github.com/stephenmcd/django-socketio) for the implementation (maybe). This would eliminate the need for a projector during the event (hopefully).
+
 ### Broadcast ###
 
 Speaker-level push broadcasts to all connected participants. This can be used to quickly share code-snippets or other important information to the participants.
