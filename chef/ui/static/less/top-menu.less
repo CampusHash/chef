@@ -1,0 +1,35 @@
+.top-menu {
+	background: @ch-blue;
+	height: @top-menu-height;
+	line-height: @top-menu-height;
+	width: @top-menu-width;
+	padding-left: @menus-padding-left;
+	margin-top: -15px;
+
+	.logo {
+		color: @white;
+		font-size: @logo-font-size;
+		display: inline-block;
+		width: @top-menu-logo-width - @menus-padding-left;
+	}
+	.top-menu-nav {
+		display: inline-block;
+		padding-left: @content-padding-left;
+
+		.top-menu-nav-list {
+
+			li {
+				display: inline-block;
+				font-weight: bold;
+				font-size: @top-menu-item-font-size;
+				padding-right: @top-menu-item-padding-right;
+
+			}
+
+			a {
+				color: @gray-light;
+
+			}
+		}
+	}
+}

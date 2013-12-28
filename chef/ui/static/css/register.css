@@ -1,6 +1,7 @@
 body {
   background:
     url('/static/img/shattered.png') repeat;
+    margin-top: 50px;
 }
 
 .register-title {
