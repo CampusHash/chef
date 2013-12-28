@@ -1,0 +1,52 @@
+.left-menu {
+	background: @left-menu-bg;
+	display: inline-block;
+	width: @left-menu-width;
+	height: 100%;
+	position: absolute;
+
+	.left-menu-nav {
+		li {
+			a {
+				color: @white;
+				display: block;
+				height: @left-menu-item-height;
+				line-height: @left-menu-item-height;
+				width: 100%;
+				padding-left: @menus-padding-left;
+				position: relative;
+
+				&.active {
+					background: @left-menu-item-selected;
+				}
+
+				i[class^=fui] {
+					font-size: 24px;
+				}
+
+				.nav-text {
+					position: absolute;
+					padding-left: 22px;
+				}
+			}
+		}
+	}
+}
+
+.notification {
+	background: @pomegranate;
+	display: inline-block;
+	border-radius: 50%;
+	width: 18px;
+	height: 18px;
+	font-size: 12px;
+	position: absolute;
+	left: 40px;
+	top: 5px;
+
+	small {
+		position: absolute;
+		left: 6px;
+		top: -1px;
+	}
+}
