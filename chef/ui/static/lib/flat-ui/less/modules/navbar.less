@@ -4,7 +4,7 @@
 
 .navbar {
   font-size: floor(@component-font-size-base * 1.067); // ~16px
-  border-radius: @border-radius-large;
+  border-radius: 0px;
   border: none;
 
   .navbar-brand {
@@ -244,8 +244,8 @@
   font-size: ceil(@component-font-size-base * 1.133); // ~17px
   
   .navbar-brand {
-    border-bottom: 2px solid mix(@brand-primary, black, 85%);
-    border-right: 2px solid mix(@brand-primary, black, 85%);
+    // border-bottom: 2px solid mix(@brand-primary, black, 85%);
+    // border-right: 2px solid mix(@brand-primary, black, 85%);
     color: @inverse;
     padding: 10px 28px 11px 32px;
   }
@@ -276,7 +276,7 @@
           &:hover,
           &:focus {
             background-color: @brand-secondary;
-            border-bottom-color: mix(@brand-secondary, black, 85%);
+            // border-bottom-color: mix(@brand-secondary, black, 85%);
             border-left: none;
             color: @inverse;
             padding-left: @navbar-link-space;
@@ -293,8 +293,8 @@
       // Link styling
       > a {
         font-size: floor(@component-font-size-base * 1.067); // ~16px
-        border-bottom: 2px solid mix(@brand-primary, black, 85%);
-        border-left: 2px solid mix(@brand-primary, black, 85%) !important;
+        // border-bottom: 2px solid mix(@brand-primary, black, 85%);
+        // border-left: 2px solid mix(@brand-primary, black, 85%) !important;
         color: @inverse;
         padding: 16px @navbar-link-space 15px;
         line-height: 20px;
