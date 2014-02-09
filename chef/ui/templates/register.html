@@ -23,6 +23,7 @@
       <div class="col-sm-6 col-md-4 col-md-offset-4">
         <div class="register-box">
           <img class="logo-large" src="/static/img/chef-logo.png" alt="Chef Logo">
+          <p class="tip">Create a super-user for Chef.</p>
           <form class="register-form" action="/register/" method="POST">
             {% csrf_token %}
             <input type="text" name="username" class="form-control" placeholder="Username" required autofocus>
@@ -33,7 +34,7 @@
             <a href="#" id="chef-help" class="pull-right register-help" data-toggle="popover" title="Chef Help" data-content="Create a super-user for your Chef installation here. You can create admins / mods later." data-placement="right">Need help?</a><span class="clearfix"></span>
           </form>
         </div>
-        <div class="copyright text-center">&copy; 2013 <a href="http://campushash.com">CampusHash</a></div>
+        <div class="copyright text-center">&copy; 2014 <a href="http://campushash.com">CampusHash Technologies LLP</a></div>
       </div>
     </div>
   </div>

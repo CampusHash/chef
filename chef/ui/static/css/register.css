@@ -1,5 +1,6 @@
 body {
   background:
+    url('/static/img/campushash-outline.png') 980px 350px no-repeat,
     url('/static/img/shattered.png') repeat;
     margin-top: 50px;
 }
@@ -20,6 +21,11 @@ body {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
+.tip {
+  text-align: center;
+  font-size: 16px;
+  color: #BDC0C2;
+}
 .logo-large {
   margin: 0 auto 10px;
   display: block;
@@ -66,4 +72,6 @@ body {
   display: block;
   margin-top: 10px;
   color: #555;
+  font-size: 14px;
+  text-transform: uppercase;
 }
